@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Questionnaire and Feedback</title>
+<script
+  src="https://code.jquery.com/jquery-3.4.1.js"
+  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+  crossorigin="anonymous"></script>
+<script>
+function SubForm (){
+    $.ajax({
+        url:'https://api.apispreadsheets.com/data/18550/',
+        type:'post',
+        data:$("#myForm").serializeArray(),
+        success: function(){
+          alert("Error! Try Again.(")
+        },
+        error: function(){
+          alert("Your Form Has Been Submitted. Thank You! :)")
+
+
+
+        }
+    });
+}
+</script>
+</head>
+<body>
+
+
+
+
+<link rel="stylesheet" type="text/css" href="main.css">
+
+	
+
+
+
+<div class="topnav">
+
+	<a href="index.html">Home Page</a>
+
+	<a href="aboutyoupage.html">About You Page</a>
+	
+
+	<a href="applicationprototypeinformationalpage.html">Application Prototype Informational Page</a>
+	<a class="active" href="#marketingpage.html">Marketing Page</a>
+
+	<a href="userguidepage.html">User Guide Page</a>
+
+
+
+
+</div>
+
+
+</ul>
+						
+
+
+
+ <p> <br> If you would like to reach out about this product please don't hesitate to fill out your information at the bottom. <br> <br> Whenever you're ready <br> <br>
+</p> 
+
+
+
+
+
+
+
+
+  <form id="myForm">
+    <label>Full Name</label>
+    <br/>
+    <input name="full_name" />
+    <br/>
+    <label>Email</label>
+    <br/>
+    <input name="email" />
+    <br/>
+   
+
+<p style="font-size:20px;">For your feedback please Rate the Following on a scale of 1 through 5 (5: strongly like the product, 4:fairly like the product, 3: neutral and 1: strongly dislike the product):</p>
+
+
+
+ <label>Functionality</label>
+    <br/>
+
+
+    <input type="radio" id="pages" name="pages" value="5" /> 5<br/>
+    <input type="radio" id="pages" name="pages" value="4" /> 4<br/>
+    <input type="radio" id="pages" name="pages" value="3" /> 3<br/>
+    <input type="radio" id="pages" name="pages" value="2" /> 2<br/>
+    <input type="radio" id="pages" name="pages" value="1" /> 1<br/>
+    <br/>
+    <br/>
+
+
+<label>Design</label>
+    <br/>
+
+
+
+    <input type="radio" id="design" name="design" value="5" /> 5<br/>
+    <input type="radio" id="design" name="design" value="4" /> 4<br/>
+    <input type="radio" id="design" name="design" value="3" /> 3<br/>
+    <input type="radio" id="design" name="design" value="2" /> 2<br/>
+    <input type="radio" id="design" name="design" value="1" /> 1<br/>
+    <br/>
+
+
+
+<br>
+<label>Content</label>
+    <br/>
+
+<input type="radio" id="content" name="content" value="5" /> 5<br/>
+<input type="radio" id="content" name="content" value="4" /> 4<br/>
+<input type="radio" id="content" name="content" value="3" /> 3<br/>
+<input type="radio" id="content" name="content" value="2" /> 2<br/>
+<input type="radio" id="content" name="content" value="1" /> 1<br/>
+
+<br>
+<br>
+
+
+
+
+
+<br>
+<label>Visuals</label>
+    <br/>
+
+<input type="radio" id="visuals" name="visuals" value="5" /> 5<br/>
+<input type="radio" id="visuals" name="visuals" value="4" /> 4<br/>
+<input type="radio" id="visuals" name="visuals" value="3" /> 3<br/>
+<input type="radio" id="visuals" name="visuals" value="2" /> 2<br/>
+<input type="radio" id="visuals" name="visuals" value="1" /> 1<br/>
+    <br/>
+
+
+
+
+
+<br>
+<label>Quality</label>
+    <br/>
+
+<input type="radio" id="quality" name="quality" value="5" /> 5<br/>
+<input type="radio" id="quality" name="quality" value="4" /> 4<br/>
+<input type="radio" id="quality" name="quality" value="3" /> 3<br/>
+<input type="radio" id="quality" name="quality" value="2" /> 2<br/>
+<input type="radio" id="quality" name="quality" value="1" /> 1<br/>
+    <br/>
+
+
+
+
+
+
+
+<br>
+<label>Relevance</label>
+    <br/>
+
+<input type="radio" id="quantity" name="quantity" value="5" /> 5<br/>
+<input type="radio" id="quantity" name="quantity" value="4" /> 4<br/>
+<input type="radio" id="quantity" name="quantity" value="3" /> 3<br/>
+<input type="radio" id="quantity" name="quantity" value="2" /> 2<br/>
+<input type="radio" id="quantity" name="quantity" value="1" /> 1<br/>
+    <br/>
+
+
+
+
+
+
+<br>
+<label>Graphics/Appearance</label>
+    <br/>
+
+<input type="radio" id="transitions" name="transitions" value="5" /> 5<br/>
+<input type="radio" id="transitions" name="transitions" value="4" /> 4<br/>
+<input type="radio" id="transitions" name="transitions" value="3" /> 3<br/>
+<input type="radio" id="transitions" name="transitions" value="2" /> 2<br/>
+<input type="radio" id="transitions" name="transitions" value="1" /> 1<br/>
+    <br/>
+
+
+
+
+<p>Please provide Additional Comments:</p>
+
+
+    <label>comments</label>
+    <br/>
+    <textarea name="comments">
+    </textarea>
+    <br/>
+    <br/>
+  </form>
+  <button onclick="SubForm()">Submit</button>
+
+
+
+
+
+
+<br>
+
+<p style="font-size:20px;">Or If you would like to send you Feedback through the email</p>
+<p> click <a href="mailto:dip.khanra@gmail.com" class="button">Send Email</a></p>
+
+
+
+
+
+
+<p style="font-size:40px;">Hope You Enjoyed Your Time With Us!
+</p>
+
+
+<br>
+<br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section>
+								<h3>Phone Number:</h3>
+								
+									<p><a href="tel:347-805-6060">Call (347)805-6060</a></p>
+							<br>
+									
+							<br>
+							
+							
+							<br>
+								
+							</section>
+							<section>
+								<h3>Email Address:</h3>
+								<p><a href="mailto:dip.khanra@gmail.com">dip.khanra@gmail.com</a></p>
+							</section>
+							<section>
+								
+								
+							</section>
+
+
+
+
+
+
+
+</body>
+</html>

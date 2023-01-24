@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="description" content="more about the author">
+	<meta name="keywords" content="portfolio, programming">
+	<meta name="author" content="Matas Backevicius">
+<title>Java Application</title>
+</head>
+<body>
+
+
+
+
+	
+	
+
+	<link rel="stylesheet" href="main.css" />
+	
+	
+
+
+	<div class="topnav">
+
+	<a href="index.html">Home Page</a>
+
+	<a href="aboutyoupage.html">About You Page</a>
+	
+
+	<a class="active" href="#applicationprototypeinformationalpage.html">Application Prototype Informational Page</a>
+	<a href="marketingpage.html">Marketing Page</a>
+
+	<a href="userguidepage.html">User Guide Page</a>
+	
+</div>
+	
+
+
+
+
+
+	<h1 style="font-size:60px;"> The New Prototype App 'Reminders'</h1>
+
+		
+<hr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<style>
+* {box-sizing: border-box;}
+body {font-family: Verdana, sans-serif;}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 500px;
+
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Image Nr.(1/12 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 25px;
+  width: 25px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 1.8s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 2.5s;
+  animation-name: fade;
+  animation-duration: 2.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+</style>
+</head>
+<body>
+
+<h2>░▒▓█►─═  ๓ᗩᵗÃş 𝓢ｌᎥ𝕕𝓔𝕊ʰ𝓸ⓦ ═─◄█▓▒░</h2>
+<p>Ｈａｖｅ ａ ｎｉｃｅ ｄａｙ.</p>
+
+<div class="slideshow-container">
+
+
+
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 9</div>
+  <img src="1.jpg" style="width:100%">
+  <div class="text">Nr.1</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 9</div>
+  <img src="2.jpg" style="width:100%">
+  <div class="text">Nr.2</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 9</div>
+  <img src="3.jpg" style="width:100%">
+  <div class="text">Nr.3</div>
+</div>
+
+
+
+
+<div class="mySlides fade">
+  <div class="numbertext">4 / 9</div>
+  <img src="4.jpg" style="width:100%">
+  <div class="text">Nr.4</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">5 / 9</div>
+  <img src="5.jpg" style="width:100%">
+  <div class="text">Nr.5</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">6 / 9</div>
+  <img src="6.jpg" style="width:100%">
+  <div class="text">Nr.6</div>
+</div>
+
+
+
+
+
+
+<div class="mySlides fade">
+  <div class="numbertext">7 / 9</div>
+  <img src="7.jpg" style="width:100%">
+  <div class="text">Nr.7</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">8 / 9</div>
+  <img src="8.jpg" style="width:100%">
+  <div class="text">Nr.8</div>
+</div>
+
+
+<div class="mySlides fade">
+  <div class="numbertext">9 / 9</div>
+  <img src="9.jpg" style="width:100%">
+  <div class="text">Nr.9</div>
+</div>
+
+
+
+
+
+
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 6000); // Change image every 8 seconds
+}
+</script>
+
+
+
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<br>
+
+<p>One of the first few components when understanding the new developed prototype we must understand the purpose of this application. We have used Xcode interface which have provided the right platform to produce iOS applications and build the test design and code from scratch. </p>
+
+
+
+
+
+<img src="22.jpg" style="width:700px;height:600px;">
+
+<hr>
+
+<hr>
+
+<ul>
+			<li>The first image shows the design of the 'Reminders' prototype.</li>
+
+<img src="ja1.jpg" style="width:400px;height:800px;">
+<br>
+
+<li>The following two showcase the user input for the text when the Reminder is selected based on the preferred date of the user.</li>
+
+<img src="ja2.jpg" style="width:350px;height:600px;">
+<img src="ja3.jpg" style="width:350px;height:600px;">
+
+<hr>
+
+<br>
+			<li>The primary principal was to produce a Business prototype of an app which would not only help professional in the business world to make better and more effective decision-making, but this would eventually make any business plans much more effective and organized</li>
+
+
+<img src="24.jpg" style="width:600px;height:400px;">
+<br>
+
+
+<li>The most common language that was used within Xcode was Swift or the Objective-C computer language.</li>
+
+<img src="21.jpg" style="width:400px;height:400px;">
+
+<hr>
+
+			<li>Simply, Swift language was the primary code language when utilizing Xcode.</li>
+
+<p> It helped build effective application design as shown in the image below: </p>
+
+<img src="23.jpg" style="width:650px;height:500px;">
+
+<br>
+
+<img src="24.jpg" style="width:650px;height:500px;">
+
+<br>
+<br>
+
+<hr>
+				
+		<li>The next set of images in the slideshow is a great representation of the Swift code that was used to manipulate and design the data around the design of the application</li>
+
+
+			
+		</ul>
+
+
+<br>
+
+
+
+
+
+
+
+
+
+
+
+<style>
+* {box-sizing: border-box;}
+body {font-family: Verdana, sans-serif;}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 500px;
+
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Image Nr.(1/6 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 25px;
+  width: 25px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 1.8s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 2.5s;
+  animation-name: fade;
+  animation-duration: 2.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+</style>
+</head>
+<body>
+
+
+
+<div class="slideshow-container">
+
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 8</div>
+  <img src="25.jpg" style="width:100%">
+  <div class="text">Nr.1</div>
+</div>
+
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 8</div>
+  <img src="26.jpg" style="width:100%">
+  <div class="text">Nr.2</div>
+</div>
+
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 8</div>
+  <img src="27.jpg" style="width:100%">
+  <div class="text">Nr.3</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">4 / 8</div>
+  <img src="28.jpg" style="width:100%">
+  <div class="text">Nr.4</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">5 / 8</div>
+  <img src="29.jpg" style="width:100%">
+  <div class="text">Nr.5</div>
+</div>
+
+
+
+
+<div class="mySlides fade">
+  <div class="numbertext">6 / 8</div>
+  <img src="30.jpg" style="width:100%">
+  <div class="text">Nr.6</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">7 / 8</div>
+  <img src="31.jpg" style="width:100%">
+  <div class="text">Nr.7</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">8 / 8</div>
+  <img src="32.jpg" style="width:100%">
+  <div class="text">Nr.8</div>
+</div>
+
+
+
+
+
+
+
+
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 6000); // Change image every 4 seconds
+}
+</script>
+
+
+
+
+
+
+
+<br>
+
+<hr>
+
+<br>
+
+
+
+
+
+
+<ul>
+			
+
+<li>As for example, on iPhone 13 Pro Max the design and the features of the application can be seen on this model:</li>
+
+<img src="33.jpg" style="width:450px;height:600px;">
+<img src="34.jpg" style="width:450px;height:600px;">
+<img src="35.jpg" style="width:450px;height:600px;">
+
+<hr>
+
+
+
+
+<br>
+<br>
+
+
+
+
+
+
+
+<li>and another example of the prototype design. This time on an iPad to show the design component of the application.</li>
+
+<img src="36.jpg" style="width:500px;height:600px;">
+<br>
+<img src="37.jpg" style="width:500px;height:600px;">
+<br>
+<img src="38.jpg" style="width:500px;height:600px;">
+<br>
+<img src="39.jpg" style="width:500px;height:600px;">
+<br>
+<br>
+
+<hr>
+
+
+
+
+</ul>
+
+
+
+<img src="40.jpg" style="width:600px;height:700px;">
+	
+<p> Above, you can see an example of what the new Reminder looks like once it's created and saved on the final screen of the application. This final screen contains the main title label: 'Your Reminders'. Likewise, the user will be able to see their list of reminders saved.
+
+
+
+<hr>
+
+
+
+<p><a href="index.html" class="button" >Click here to Go BACK to the Home page</a></p>
+	
+		
+<hr>
+		
+		
+		
+</body>
+</html>

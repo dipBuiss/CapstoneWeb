@@ -1,0 +1,157 @@
+body {
+background-color: Orange;
+}
+
+h1 {
+color: Red;
+text-align: center;
+}
+
+
+p {
+	font-family: "Papyrus", Fantasy;
+	font-size: 20px;
+}
+	
+
+
+p {
+	color: #333300;
+	text-align: left;
+}
+
+
+
+
+
+
+
+span.boldtext {
+
+	font-weight: bold;
+
+}
+
+
+span.italictext {
+
+	font-style: italic;
+
+}
+
+
+
+
+
+
+
+.topnav {
+	background-color: grey;
+color: #ffff66;
+	overflow: hidden;
+}
+
+
+
+
+.topnav a {
+	float: left;
+	color: #f2f2f2;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-size: 17px;
+}
+
+
+
+
+.topnav a:hover {
+	background-color: #ddd;
+	color: black;
+}
+
+
+
+
+.topnav a.active {
+	background-color: #4CAF50;
+	color: white;
+}
+
+
+
+
+
+
+
+
+table, th, td {
+	border: 1px solid yellow;
+	width: 40%;
+	
+}
+
+th {
+	height: 60px;
+}
+
+td {
+	height: 30px;
+}
+
+table {
+	background-color: lightgreen;
+}
+td {
+	background-color: lightyellow;
+}
+
+
+
+
+
+table { 
+	border-style: inset;
+}
+
+
+th {
+	border-style: solid;
+}
+
+td {
+	border-style: groove;
+}
+
+td {
+	padding: 15px;
+}
+
+th {
+	padding: 32px;
+}
+
+th {
+	text-align: left;
+}
+
+td {
+	text-align: center;
+}
+
+th {
+	vertical-align: middle;
+}
+
+td {
+	vertical-align: bottom;
+}
+
+
+tr:hover {background-color: coral;}
+
+
+td:hover {background-color: green;}
+
+
